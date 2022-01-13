@@ -2,6 +2,8 @@
 
 ## Welcome! 👋
 
+## Demo -> [live](https://front-end-mentor-nft-preview-1z74igoqo-kx0101.vercel.app/)
+
 # PC
 ![s1](/images/s1.png)
 # PC
