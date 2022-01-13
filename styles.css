@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --bg-main: hsl(217, 54%, 11%);
+  --bg-card: hsl(216, 50%, 16%);
+  --colour-blue: hsl(215, 51%, 70%);
+  --colour-cyan: hsl(178, 100%, 50%);
+  --colour-white: hsl(0, 0%, 100%);
+  --line-colour: hsl(215, 32%, 27%);
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-main);
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  background-color: var(--bg-card);
+  position: flex;
+  font-size: 13px;
+  margin: 50px auto;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.container .main-image {
+  position: relative;
+}
+
+.container .main-image div {
+  position: absolute;
+  top: 0;
+  background-color: hsl(178, 100%, 50%, 60%);
+  width: 100%;
+  height: calc(100% - 18px);
+  z-index: 999;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.container .main-image div:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.container .main-image div img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+a:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.desc {
+  font-weight: 400;
+  color: var(--colour-blue);
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-right: 0px;
+}
+
+.container h2 {
+  font-weight: 300;
+  color: var(--colour-white);
+  margin-bottom: 15px;
+}
+
+.eth {
+  color: var(--colour-cyan);
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.ethd {
+  color: var(--colour-cyan);
+  position: relative;
+  bottom: 5px;
+  right: 20px;
+}
+
+.clockd {
+  color: var(--colour-blue);
+  position: relative;
+  bottom: 5px;
+  right: 0px;
+}
+
+.clock {
+  color: var(--colour-blue);
+  margin-bottom: 10px;
+  position: relative;
+  left: 20px;
+}
+
+hr {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  height: 5px;
+  border: 0px solid var(--line-colour);
+  border-top-width: 1px;
+}
+
+footer {
+  margin-top: 10px;
+  font-weight: 600;
+  color: var(--colour-blue);
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+footer p {
+  margin-left: 15px;
+  position: relative;
+  bottom: 0.5rem;
+}
+
+footer span {
+  color: var(--colour-white);
+}
+
+footer img {
+  width: 10%;
+  height: 10%;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 250px;
+  }
+}
